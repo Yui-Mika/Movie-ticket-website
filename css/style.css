@@ -1,0 +1,271 @@
+/* ========== NAVBAR ========== */
+/* Nền navbar trắng, bóng nhẹ */
+.navbar {
+  background: #fff !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+}
+.navbar .navbar-brand {
+  letter-spacing: 2px;
+}
+.navbar .nav-link {
+  font-size: 1.06rem;
+  color: #222 !important;
+  transition: color 0.2s;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: DarkRed !important;
+  text-shadow: 0 2px 8px rgba(120,0,0,0.08);
+}
+.btn-danger, .btn-outline-danger {
+  border-radius: 30px;
+  font-size: 1.06rem;
+  transition: 0.2s;
+}
+.btn-danger:hover, .btn-outline-danger:hover {
+  background: #c00000 !important;
+  color: #fff !important;
+  border-color: #c00000 !important;
+}
+
+
+/* ========== BODY/BACKGROUND ========== */
+body {
+    background: #faf9f7;
+}
+
+/* ========== SLIDER ========== */
+.slider-wrapper {
+    max-width: 1200px;
+    margin: 32px auto 24px auto;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(80,0,0,0.10);
+    background: #fff;
+    padding: 0;
+    position: relative;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.slider-wrapper img {
+    border-radius: 24px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover; /* Nếu ảnh crop đúng tỷ lệ ngang. Nếu muốn luôn đủ ảnh, đổi thành contain */
+    background: #fff;
+}
+
+
+
+/* Nút điều hướng trái/phải */
+.slider-wrapper .carousel-control-prev,
+.slider-wrapper .carousel-control-next {
+    width: 62px;
+    height: 62px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    z-index: 2;
+    /* Đẩy sát vào hình */
+    left: 24px; /* Nút trái */
+    right: 24px; /* Nút phải */
+}
+
+.slider-wrapper .carousel-control-prev {
+    left: 24px; /* Sát bên trái */
+    right: auto;
+}
+
+.slider-wrapper .carousel-control-next {
+    right: 24px; /* Sát bên phải */
+    left: auto;
+}
+
+.slider-wrapper .carousel-control-prev-icon,
+.slider-wrapper .carousel-control-next-icon {
+    background-color: #c62828 !important;
+    background-size: 70% 70%;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(100,0,0,0.16);
+    opacity: 0.92;
+    border: 3px solid #fff;
+    transition: background 0.2s;
+}
+.slider-wrapper .carousel-control-prev-icon:hover,
+.slider-wrapper .carousel-control-next-icon:hover {
+    background-color: #8B0000 !important;
+}
+
+/* Phần dot indicators */
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c62828;
+  opacity: 0.45;
+  margin: 0 4px;
+  border: none;
+  transition: opacity 0.2s;
+}
+.carousel-indicators .active {
+  opacity: 1;
+  background: #e53935;
+}
+
+/* ========== MOVIE CARDS ========== */
+.movie-card {
+    border-radius: 18px;
+    overflow: hidden;
+    transition: box-shadow 0.22s, transform 0.18s;
+    box-shadow: 0 2px 16px rgba(139,0,0,0.10); /* DarkRed shadow */
+    background: #fff;
+}
+.movie-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(139,0,0,0.18);
+    z-index: 2;
+}
+.movie-card .card-img-top {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;  /* Giữ nguyên tỷ lệ ảnh */
+    background: #111;   /* Màu nền khi ảnh không đủ chiều rộng/cao */
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.movie-card .btn-warning {
+    background: linear-gradient(90deg, #8B0000 0%, #b71c1c 100%);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background 0.22s, color 0.16s;
+    letter-spacing: 1px;
+}
+.movie-card .btn-warning:hover {
+    background: linear-gradient(90deg, #b71c1c 0%, #8B0000 100%);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(139,0,0,0.12);
+}
+
+.movie-section-title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 900;
+    color: #8B0000;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 10px rgba(139,0,0,0.07);
+    margin-bottom: 1.7rem;
+}
+
+.btn-darkred {
+    background: #8B0000;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    transition: background 0.16s;
+}
+.btn-darkred:hover {
+    background: #b71c1c;
+    color: #fff;
+}
+.btn-outline-darkred {
+    background: #fff;
+    color: #8B0000;
+    border: 2px solid #8B0000;
+    font-weight: 700;
+    transition: background 0.16s, color 0.16s;
+}
+.btn-outline-darkred:hover {
+    background: #8B0000;
+    color: #fff;
+}
+
+/* ========== Tab ========== */
+.nav-tabs {
+    border-bottom: 2.5px solid #eee;
+    margin-bottom: 32px;
+}
+.nav-tabs .nav-link {
+    color: #8B0000;
+    font-weight: 700;
+    background: none;
+    border: none;
+    font-size: 1.13rem;
+    padding: 12px 32px;
+    transition: color 0.16s, border-bottom 0.18s;
+}
+.nav-tabs .nav-link.active {
+    color: #b71c1c;
+    border-bottom: 3px solid #b71c1c;
+    background: none;
+}
+
+/* ========== Phần tin tức ========== */
+
+h2 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #8B0000;
+    text-shadow: 0px 2px 5px rgba(139,0,0,0.2);
+}
+
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;  /* Giới hạn chiều cao hình ảnh */
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.card a.btn-outline-danger {
+    font-weight: 600;
+    border: 2px solid #8B0000;
+    background: none;
+    color: #8B0000;
+    transition: background 0.3s, color 0.3s;
+}
+
+.card a.btn-outline-danger:hover {
+    background: #8B0000;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 180px;
+    }
+}
+
