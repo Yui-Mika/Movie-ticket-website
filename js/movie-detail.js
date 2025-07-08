@@ -4,7 +4,7 @@ const movies = [
     // Thông tin phim thứ 3 - Elio
     id: "elio",
     title: "Elio Cậu Bé Đến Từ Trái Đất",
-    poster: "img/showing_movie3.jpg",
+    poster: "../img/showing_movie3.jpg",
     genre: "Animation, Adventure, Comedy, Fantasy",
     description: `Elio là một cậu bé đam mê vũ trụ với trí tưởng tượng phong phú. Một hôm, cậu bất ngờ phải tham gia một cuộc phiêu lưu ngoài vũ trụ, nơi cậu phải xây dựng mối quan hệ mới với các dạng sống ngoài hành tinh. Elio phải vượt qua cuộc chiến ở quy mô liên thiên hà và khám phá ra con người thực sự của mình. 
     Trong cuộc phiêu lưu dở khóc dở cười trên màn ảnh rộng của Pixar, Elio - cậu bé mê mẩn người ngoài hành tinh - bất ngờ bị cuốn vào Liên Hiệp Thiên Hà, một vũ trụ liên hành tinh đầy kỳ diệu, nơi quy tụ các loài sinh vật thông minh khắp thiên hà. Trớ trêu thay, Elio lại bị hiểu nhầm là người đứng đầu Trái Đất. Giờ đây, cậu phải vượt qua những rắc rối mang quy mô vũ trụ, kết nối với những người bạn không ngờ tới, và tìm cách biến giấc mơ lớn nhất đời mình thành hiện thực.`,
@@ -44,7 +44,7 @@ const movies = [
     // Thông tin phim thứ 2 - M3GAN 2.0
     id: "m3gan",
     title: "M3GAN 2.0",
-    poster: "img/showing_movie2.jpg",
+    poster: "../img/showing_movie2.jpg",
     genre: "Horror, Science, Fiction",
     description: `M3GAN 2.0 lấy bối cảnh 2 năm sau các sự kiện ở phần 1. Lúc này, Gemma phát hiện công nghệ sản xuất MEGAN đã bị đánh cắp. Kẻ gian đã tạo ra một robot AI khác với chức năng tương tự MEGAN, nhưng được trang bị sức mạnh chiến đấu "khủng" hơn mang tên Amelia. Để "đối đầu" với Amelia, Gemma buộc phải "hồi sinh" và cải tiến MEGAN, hứa hẹn một trận chiến "nảy lửa" trên màn ảnh vào năm 2025.`,
     director: "Gerard Johnstone",
@@ -82,7 +82,7 @@ const movies = [
   {
     id: "httyd",
     title: "How to Train Your Dragon",
-    poster: "img/showing_movie1.jpg",
+    poster: "../img/showing_movie1.jpg",
     genre: "Action, Adventure, Comedy, Fantasy",
     description: `Câu chuyện về một chàng trai trẻ với ước mơ trở thành thợ săn rồng, nhưng định mệnh lại đưa đẩy anh đến tình bạn bất ngờ với một chú rồng.
     Giống như bộ phim hay gốc từ năm 2010, Bí Kíp Luyện Rồng phiên bản live-action lần này diễn ra trên Đảo Berk, nơi người Viking và rồng đã là kẻ thù không đội trời chung trong nhiều thế hệ. Nhưng khi Hiccup (Mason Thames) – con trai của Tù trưởng Stoick the Vast đi ngược lại truyền thống hàng thế kỷ để kết bạn với Toothless - một con rồng Night Fury, chính giây phút đó anh ấy đã phá vỡ quy tắc vốn có của cộng đồng và mở ra sự căng thẳng tột cùng cho cả người Viking và rồng.`,
@@ -119,7 +119,7 @@ const movies = [
   {
     id: "makhongdau",
     title: "Ma Không Đầu",
-    poster: "img/showing_movie4.jpg",
+    poster: "../img/showing_movie4.jpg",
     genre: "Horror, Comedy",
     description: `Ma Không Đầu là một bộ phim kinh dị Việt Nam xoay quanh với nghề nghiệp "độc lạ" hốt xác và lái xe cứu thương. Bộ đôi Tiến Luật và Ngô Kiến Huy hứa hẹn mang đến những tràng cười không ngớt cho khán giả qua hành trình tìm xác có một không hai trên màn ảnh Việt. 
     Nhờ sự trợ giúp của thế lực tâm linh, họ không chỉ đối mặt với những tình huống "dở khóc dở cười" mà còn khám phá ra những bí mật rợn người ẩn sau những thi thể. Liệu họ có hoàn thành nhiệm vụ "khó nhằn" này hay sẽ gặp phải những "biến cố" nào?`,
@@ -156,7 +156,7 @@ const movies = [
   {
     id: "bigdeal",
     title: "Big Deal",
-    poster: "img/showing_movie5.jpg",
+    poster: "../img/showing_movie5.jpg",
     genre: "Drama, Suspense",
     description: `Mượn Rượu Đẩy Kèo lấy bối cảnh Hàn Quốc vào năm 1997, khi cuộc khủng hoảng kinh tế tài chính đang hoành hành khắp châu Á khiến Gukbo - công ty sản xuất Soju số 1 đất nước rơi vào tình trạng cận kề phá sản. 
     In-beom (Lee Je-hoon) - chàng trai trẻ đầy tham vọng đại diện cho tập đoàn đầu tư toàn cầu Solquin đã trở về quê hương với quyết tâm thâu tóm Gukbo. Để thực hiện âm mưu này, In-beom đội lốt một chuyên gia tư vấn ngây thơ, 
@@ -194,7 +194,7 @@ const movies = [
   {
     id: "28yearslater",
     title: "28 Years Later",
-    poster: "img/showing_movie6.jpg",
+    poster: "../img/showing_movie6.jpg",
     genre: "Horror, Thriller",
     description: `Cơn ác mộng chưa kết thúc. Virus trở lại, kéo theo bóng tối bao trùm nước Anh. Một hành trình sinh tử: cậu bé tìm kiếm bác sĩ để cứu mẹ mình, băng qua vùng đất chết chóc đầy xác sống tiến hóa và những kẻ nguy hiểm ẩn sau gương mặt tử tế. Liệu niềm hy vọng cuối cùng có đủ để cứu họ khỏi vực thẳm tuyệt vọng?
     28 Years Later là phần tiếp theo của bộ phim kinh dị nổi tiếng 28 Days Later. Bộ phim theo chân một nhóm người sống sót sau đại dịch virus đã biến con người thành những sinh vật hung hãn. Họ phải đối mặt với những thử thách mới và tìm cách sống sót trong thế giới đầy rẫy nguy hiểm.`,

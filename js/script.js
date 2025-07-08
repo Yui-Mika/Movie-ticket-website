@@ -48,10 +48,10 @@ function togglePassword(inputId, el) {
   const input = document.getElementById(inputId);
   if (input.type === "password") {
     input.type = "text";
-    el.querySelector("img").src = "img/eye-slash.png";
+    el.querySelector("img").src = "../img/eye-slash.png";
   } else {
     input.type = "password";
-    el.querySelector("img").src = "img/eye.png";
+    el.querySelector("img").src = "../img/eye.png";
   }
 }
 
