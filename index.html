@@ -60,7 +60,7 @@
           <!-- Nút Mua vé và đăng nhập -->
           <div class="d-flex align-items-center">
             <a class="btn btn-danger fw-bold me-2 px-4 py-2" style="background:DarkRed; border:none;" href="#">★ Mua Vé</a>
-            <a class="btn btn-outline-danger fw-bold px-3 py-2" style="border-color:DarkRed; color:DarkRed;" href="#">Đăng nhập</a>
+            <a class="btn btn-outline-danger fw-bold px-3 py-2" style="border-color:DarkRed; color:DarkRed;" href="#" id="loginBtn">Đăng nhập</a>
           </div>
         </div>
       </div>
@@ -130,8 +130,8 @@
                 <h5 class="card-title fw-bold mb-1">How To Train Your Dragon</h5>
                 <p class="card-text text-secondary mb-2 small">Genre: Action, Adventure, Comedy, Fantasy</p>
                 <div class="d-flex gap-2 mt-auto">
-                  <a href="#" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
-                  <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a>
+                  <a href="movie-detail.html?id=httyd" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
+                  <!-- <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a> -->
                 </div>
               </div>
             </div>
@@ -146,8 +146,8 @@
                 <h5 class="card-title fw-bold mb-1">M3GAN 2.0</h5>
                 <p class="card-text text-secondary mb-2 small">Genre: Horror, Science, Fiction</p>
                 <div class="d-flex gap-2 mt-auto">
-                  <a href="#" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
-                  <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a>
+                  <a href="movie-detail.html?id=m3gan" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
+                  <!-- <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a> -->
                 </div>
               </div>
             </div>
@@ -162,8 +162,8 @@
                 <h5 class="card-title fw-bold mb-1">Elio Cậu Bé Đến Từ Trái Đất</h5>
                 <p class="card-text text-secondary mb-2 small">Genre: Animation, Adventure, Comedy, Fantasy</p>
                 <div class="d-flex gap-2 mt-auto">
-                  <a href="#" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
-                  <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a>
+                  <a href="movie-detail.html?id=elio" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
+                  <!-- <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a> -->
                 </div>
               </div>
             </div>
@@ -178,8 +178,8 @@
                 <h5 class="card-title fw-bold mb-1">Ma Không Đầu</h5>
                 <p class="card-text text-secondary mb-2 small">Genre: Horror, Comedy</p>
                 <div class="d-flex gap-2 mt-auto">
-                  <a href="#" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
-                  <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a>
+                  <a href="movie-detail.html?id=makhongdau" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
+                  <!-- <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a> -->
                 </div>
               </div>
             </div>
@@ -193,8 +193,8 @@
                 <h5 class="card-title fw-bold mb-1">Big Deal</h5>
                 <p class="card-text text-secondary mb-2 small">Genre: Drama, Suspense</p>
                 <div class="d-flex gap-2 mt-auto">
-                  <a href="#" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
-                  <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a>
+                  <a href="movie-detail.html?id=bigdeal" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
+                  <!-- <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a> -->
                 </div>
               </div>
             </div>
@@ -208,8 +208,8 @@
                 <h5 class="card-title fw-bold mb-1">28 Years Later</h5>
                 <p class="card-text text-secondary mb-2 small">Genre: Horror, Thriller</p>
                 <div class="d-flex gap-2 mt-auto">
-                  <a href="#" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
-                  <a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a>
+                  <a href="movie-detail.html?id=28yearslater" class="btn btn-darkred flex-fill rounded-pill fw-bold py-2">Đặt vé</a>
+                  <!--<a href="#" class="btn btn-outline-darkred flex-fill rounded-pill fw-bold py-2">Chi tiết</a> -->
                 </div>
               </div>
             </div>
@@ -361,5 +361,65 @@
 
     </div>
 
+    <!-- Modal Đăng Nhập -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="loginClose">&times;</span>
+    <h2>Login In To Account</h2>
+    <form action="#" onsubmit="return false;">
+      <input type="email" placeholder="Enter Email" required><br>
+      <!-- Ô nhập mật khẩu với nút hiện/ẩn -->
+      <div class="password-wrapper">
+        <input type="password" id="loginPassword" placeholder="Enter Password" required>
+        <span class="toggle-password" onclick="togglePassword('loginPassword', this)">
+          <img src="img/eye.png" alt="Show/Hide"/>
+        </span>
+      </div>
+
+      <button type="submit" class="btn-modal-primary">Login</button>
+    </form>
+
+    <!-- Nút chuyển sang đăng ký -->
+    <button id="registerBtn" type="button" class="btn-modal-outline" style="width:100%;margin-top:12px;">Register</button>
+  </div>
+</div>
+
+<!-- Modal Đăng Ký -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="registerClose">&times;</span>
+    <h2>Sign Up For An Account</h2>
+    <form action="#" onsubmit="return false;">
+      <input type="text" placeholder="Enter Full Name" required><br>
+      <input type="email" placeholder="Enter Email" required><br>
+      <input type="tel" placeholder="Enter Phone Number" required><br>
+      <input type="date" placeholder="Enter Birthday" required><br>
+      <!-- Trường mật khẩu với chức năng hiển thị/ẩn -->
+      <div class="password-wrapper">
+        <input type="password" id="registerPassword" placeholder="Enter Password" required>
+        <span class="toggle-password" onclick="togglePassword('registerPassword', this)">
+          <img src="img/eye.png" alt="Show/Hide"/>
+        </span>
+      </div>
+      <!-- Trường nhập lại mật khẩu - chức năng hiển thị/ẩn -->
+      <div class="password-wrapper">
+        <input type="password" id="registerPassword1" placeholder="Retype Password" required>
+        <span class="toggle-password" onclick="togglePassword('registerPassword1', this)">
+          <img src="img/eye.png" alt="Show/Hide"/>
+        </span>
+      </div>
+      <!-- Thêm một thẻ để hiển thị lỗi -->
+      <div id="retypeError" class="error-message"></div>
+
+      <button type="submit" class="btn-modal-primary">Finish</button>
+    </form>
+    
+    <!-- Nút chuyển sang đăng nhập -->
+    <button id="toLogin" type="button" class="btn-modal-outline" style="width:100%;margin-top:12px;">Login</button>
+  </div>
+</div>
+
+    <!-- Đặt script.js -->
+    <script src="js/script.js"></script>
 </body>
 </html>
